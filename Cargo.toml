@@ -1,11 +1,35 @@
 [package]
 name = "humor"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2021"
+readme = "README.md"
 authors = ["Muhan Xiao <syrupcake@protonmail.com>"]
-description = "Still under development, no content. It will become an awesome project."
+description = "A tool to execute commands based on YAML configuration files."
 license = "MIT/Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.3", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+anyhow = "1.0"
+thiserror = "1.0"
+dirs = "5.0"
+
+[dev-dependencies]
+tempfile = "3.2"
+assert_cmd = "2.0"
+predicates = "2.1"
+
+[lib]
+name = "humor"
+path = "src/lib.rs"
+
+[[bin]]
+name = "humor"
+path = "src/main.rs"
+
+[[test]]
+name = "cli_tests"
+path = "tests/cli_tests.rs"

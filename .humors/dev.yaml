@@ -1,0 +1,5 @@
+commands:
+  python:
+    dev:
+      build: python -m build --wheel
+      install: pip install ./dist/somepackage-py3-0.0.1.wheel

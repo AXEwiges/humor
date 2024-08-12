@@ -1,0 +1,5 @@
+commands:
+  python:
+    test:
+      testall: python -m unittest testall.py
+      testmodule: python -m unittest testmodule.py

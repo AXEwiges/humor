@@ -1,0 +1,9 @@
+import:
+  - /somepath/test.yaml
+  - /somepath/dev.yaml
+
+commands:
+  rust:
+    prelude:
+      check: cargo fmt && cargo check
+      build: cargo build
