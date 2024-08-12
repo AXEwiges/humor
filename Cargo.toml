@@ -1,9 +1,13 @@
 [package]
 name = "humor"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 readme = "README.md"
-authors = ["Muhan Xiao <syrupcake@protonmail.com>"]
+homepage = "https://github.com/AXEwiges/humor"
+repository = "https://github.com/AXEwiges/humor"
+authors = ["AX"]
+keywords = ["cli"]
+categories = ["command-line-utilities", "command-line-interface"]
 description = "A tool to execute commands based on YAML configuration files."
 license = "MIT/Apache-2.0"
 
